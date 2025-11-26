@@ -1,4 +1,4 @@
-// =====  Firebase back-end config  (we fill this in step 6)  =====
+// =====  Firebase back-end config  (we fill this in step 5)  =====
 const firebaseConfig = {
   apiKey: "REPLACE",
   authDomain: "REPLACE.firebaseapp.com",
