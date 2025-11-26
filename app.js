@@ -70,3 +70,7 @@ addCat.onclick=async()=>{
   await db.collection(`${monthKey}/categories`).add({name,planned:0,spent:0,emoji:'💰',type:'essential'});
   loadCat();
 };
+// register service worker
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js');
+}
