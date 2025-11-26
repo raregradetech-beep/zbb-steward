@@ -1,12 +1,20 @@
-// =====  Firebase back-end config  (we fill this in step 5)  =====
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "REPLACE",
-  authDomain: "REPLACE.firebaseapp.com",
-  projectId: "REPLACE",
-  storageBucket: "REPLACE.appspot.com",
-  messagingSenderId: "REPLACE",
-  appId: "REPLACE"
+  apiKey: "AIzaSyB_CNU1TqTM4LsbtyZWWPh5kCbnvITXG1o",
+  authDomain: "zbb-steward-backend.firebaseapp.com",
+  projectId: "zbb-steward-backend",
+  storageBucket: "zbb-steward-backend.firebasestorage.app",
+  messagingSenderId: "977691782950",
+  appId: "1:977691782950:web:c4284750efdd5e98479be7"
 };
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
 // =================================================================
 firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore();
