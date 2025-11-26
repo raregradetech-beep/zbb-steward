@@ -7,3 +7,4 @@ button{cursor:pointer;border:none;padding:.5rem 1rem;border-radius:4px;backgroun
 table{width:100%;border-collapse:collapse;margin-bottom:.5rem}
 th,td{padding:.4rem;border:1px solid #ccc;text-align:left}
 input[type=number]{width:100%;border:1px solid #aaa;padding:.2rem}
+#tbb strong{font-size:1.3rem}
