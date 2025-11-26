@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+  <meta charset="utf-8">
+  <title>ZBB Steward 🇿🇦</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+</head>
+<body>
+  <header>
+    <h1>ZBB Steward 🇿🇦</h1>
+    <button id="logout" hidden>Logout</button>
+  </header>
+
+  <main id="app">
+    <section id="authSec">
+      <h2>Sign In / Register</h2>
+      <form id="authForm">
+        <input id="email" type="email" placeholder="Email" required><br>
+        <input id="pass" type="password" placeholder="Password" required><br>
+        <button>Login / Create</button>
+      </form>
+    </section>
+
+    <section id="dash" hidden>
+      <h2>Dashboard <small id="period"></small></h2>
+      <p id="tbb">To Be Budgeted: <strong>R0</strong></p>
+
+      <h3>Income</h3>
+      <input id="incIn" type="number" placeholder="Monthly income (R)">
+      <button id="setInc">Set</button>
+
+      <h3>Categories</h3>
+      <div id="catGrid"></div>
+      <button id="addCat">+ Add Category</button>
+
+      <h3>Scripture Tip</h3>
+      <blockquote id="verse">Loading…</blockquote>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
