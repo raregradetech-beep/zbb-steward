@@ -34,14 +34,24 @@
       <h2>Dashboard <small id="period"></small></h2>
       <p id="tbb">To Be Budgeted: <strong>R0</strong></p>
 
-      <h3>Income</h3>
-      <input id="incIn" type="number" placeholder="Monthly income (R)">
-      <button id="setInc">Set</button>
+     <!-- =====  INCOME EDITOR  ===== -->
+<h3>Income Sources</h3>
+<table id="incTable">
+  <thead><tr><th>Name</th><th>Amount (R)</th><th></th></tr></thead>
+  <tbody></tbody>
+</table>
+<button id="addInc">+ Add Income</button>
+<p><strong>Total Income: R<strong id="totalInc">0</strong></strong></p>
 
-      <h3>Categories</h3>
-      <div id="catGrid"></div>
-      <button id="addCat">+ Add Category</button>
-
+<!-- =====  CATEGORIES EDITOR  ===== -->
+<h3>Categories</h3>
+<table id="catTable">
+  <thead><tr><th>Name</th><th>Budgeted (R)</th><th>Spent (R)</th><th></th></tr></thead>
+  <tbody></tbody>
+</table>
+<button id="addCat">+ Add Category</button>
+<p id="tbb">To Be Budgeted: <strong>R0</strong></p>
+      
       <h3>Scripture Tip</h3>
       <blockquote id="verse">Loading…</blockquote>
     </section>
